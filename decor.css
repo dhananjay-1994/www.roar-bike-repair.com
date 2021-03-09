@@ -123,7 +123,7 @@ color: gold;
 
 }
 
-a.mybutton{
+.mybutton{
     background-color: white;
     color: #FA4083;
     padding: 10px 25px;
@@ -187,4 +187,34 @@ a.mybutton{
 .tbox p:last-of-type{
     font-size: 0.8rem;
     padding-left: 30px;
+}
+
+.inputwrapper {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+input[type=text] ,input[type=email], textarea {
+    padding: 10px 10px;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.85rem;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    padding: 10px 5px;
+}
+label[for=email-sub] ,label[for=phone],label[for=Email]{
+    display: inline-block;
+    margin-left: -5px;
+}
+
+label[for=phone] {
+    margin-right:10px;
+}
+
+form {
+    margin: 20px 0px;
 }
