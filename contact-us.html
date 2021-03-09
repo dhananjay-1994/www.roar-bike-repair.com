@@ -53,9 +53,55 @@
             <p>Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.</p>
 
             <form action="contact-form.php" method="post">
-                <input type="text" name="name" id="name">
-                <input type="email" name="email" id="email">
-                <input type="submit" value="Go">
+
+            <div class="inputwrapper">
+                <label for="name">Name : </label>
+                <input type="text" name="name" id="name" placeholder="First name">
+            </div>
+
+                <div class="inputwrapper">
+                    <label for="email">Email :</label>
+                    <input type="email" name="email" id="email" placeholder="Enter Email">
+                </div>
+
+                <div class="inputwrapper">
+
+                    <textarea name="textarea" id="textarea" cols="70" rows="5" placeholder="Let us know what you think about us."></textarea>
+
+                </div>
+
+                <div class="inputwrapper">
+
+                    <input type="checkbox" name="email-sub" id="email-sub" value="yes-sign-me-up" checked>
+                    <label for="email-sub">Sign up for Email NewsLetter</label>
+
+                </div>
+
+                <div class="inputwrapper">
+                    
+                    <p>How would you like to be contacted ?</p>
+                    
+                    <input type="radio" name="contact-pref" id="phone" value="phone">
+                    <label for="phone">Phone</label>
+
+                    <input type="radio" name="contact-pref" id="Email" value="email">
+                    <label for="Email">Email</label>
+
+
+                </div>
+
+                <div class="inputwrapper">
+                    <select name="city" id="city">
+                        <option value="Not-Selected">Choose City</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="New-Delhi">New-Delhi</option>
+                        <option value="Rajasthan" selected>Rajasthan</option>
+                        <option value="Maharashta">Maharashta</option>
+                        <option value="Goa">Goa</option>
+                    </select>
+               </div>
+
+                <input type="submit" value="Submit" class="mybutton">
 
             </form>
         </div>
